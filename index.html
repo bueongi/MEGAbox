@@ -29,7 +29,7 @@
   <!-- CSS Reset -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- swiper CSS -->
-  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
   <style>
     /*======= 기본스타일 / 모바일 / 360px 이상 =======*/
@@ -438,9 +438,8 @@
 
       // 스와이퍼
       var swiper = new Swiper('.swiper-container',{
-        direction:'horizontal',
         spaceBetween:30,
-        slidesPerView:4
+        slidesPerView:'auto'
       });
 
 
