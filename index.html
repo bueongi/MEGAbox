@@ -115,9 +115,8 @@
     .hastag li{display:inline-block;padding-right:10px;}
     .hastag a{color:rgba(255,255,255,.8);font-weight:200;font-size:.8rem;}
     .hastag a.active{color:#fff;font-weight:800;text-decoration:underline;}
-
-    .box_office p{}
     .box_office img{width:8px;float:right;}
+    .box_office .swiper-slide{width:200px;height:300px;background:#fff;}
 
     /* .box_office::before{
       content:'';
@@ -313,7 +312,7 @@
             </ul>
   
           </div>
-          <!-- <div class="swiper-container">
+          <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">1</div>
               <div class="swiper-slide">2</div>
@@ -324,7 +323,7 @@
               <div class="swiper-slide">7</div>
               <div class="swiper-slide">8</div>
               <div class="swiper-slide">9</div>
-              <div class="swiper-slide">10</div>
+              <div class="swiper-slide">0</div>
               <div class="swiper-slide">11</div>
               <div class="swiper-slide">12</div>
               <div class="swiper-slide">13</div>
@@ -336,13 +335,12 @@
               <div class="swiper-slide">19</div>
               <div class="swiper-slide">20</div>
             </div>
-          </div> -->
+          </div>
           <p class="con_txt04">
             더많은 영화보기
             <div class="arrow_box">
               <img src="./images/arrow.png" alt="더 많은 영화보기 화살표">
             </div>
-            
           </p>
         </div>
       </div>
@@ -432,12 +430,19 @@
         }
       });
 
-      // var swiper = new swiper('.swiper-container');
       // 박스오피스해시태그
       $('.hastag a').on('click',function(){
         $('.hastag a').removeClass('active');
         $(this).addClass('active');
       });
+
+      // 스와이퍼
+      var swiper = new Swiper('.swiper-container',{
+        direction:'horizontal',
+        spaceBetween:30,
+        slidesPerView:4
+      });
+
 
 
     })
