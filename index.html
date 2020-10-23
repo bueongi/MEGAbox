@@ -76,7 +76,7 @@
     .banner01,.banner03{background-color:#4f79a9;display:none;}
     
     /* ======== header ======= */
-    .header{background:rgba(0,0,0,0);position:fixed;left:0;top:0;width:100%;z-index:1;}
+    .header{background:rgba(0,0,0,0);position:fixed;left:0;top:0;width:100%;z-index:2;}
     .header.active{background:rgba(0,0,0,0.7);}
     .header .content{padding:20px 0;}
     .header_main{display:flex;justify-content:space-between;align-items:center;}
@@ -115,30 +115,15 @@
     .hastag li{display:inline-block;padding-right:10px;}
     .hastag a{color:rgba(255,255,255,.8);font-weight:200;font-size:.8rem;}
     .hastag a.active{color:#fff;font-weight:800;text-decoration:underline;}
-    .box_office img{width:8px;float:right;}
-    .box_office .swiper-slide{width:200px;height:300px;background:#fff;}
+    .box_office .swiper-slide{width:200px;height:500px;background:#fff;}
+    .box_office .poster_box.dolby::after{content:'';display:block;width:45px;height:19px;background:url('./images/db.png') no-repeat;}
+    .box_office .movie_tit.age12::before{content:'';display:block;width:23px;height:23px;background:url('./images/age_12.png') no-repeat;}
+    .box_office .movie_tit.age15::before{content:'';display:block;width:23px;height:23px;background:url('./images/age_15.png') no-repeat;}
+    .box_office .movie_tit.age19::before{content:'';display:block;width:23px;height:23px;background:url('./images/age_19.png') no-repeat;}
+    .box_office .movie_tit.all::before{content:'';display:block;width:23px;height:23px;background:url('./images/age_all.png') no-repeat;}
+    .box_office .arrow_box>img{width:10px;}
 
-    /* .box_office::before{
-      content:'';
-      display:block;
-      width:100%;
-      height:100%;
-      background:#0e0a20 url('./images/bg_origin.png') no-repeat center;
-      background-size:cover;
-      position:absolute;
-      left:0;
-      top:0;
-      filter:blur(30px);
-      z-index:10;
-    } */
-    /* .box_office>.container{position:relative;z-index:11;} */
-    
 
-    /* .swiper-container {
-      width: 600px;
-      height: 300px;
-      background:#ff0000;
-    } */
 
     .event{height:500px;background:blue;}
     .curation{height:500px;background:yellow;}
@@ -314,7 +299,39 @@
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">1</div>
+              <div class="swiper-slide">
+                <div class="poster_box dolby">
+                  <div class="img_box">
+                    <img src="./images/top01.gif" alt="poster01">
+                  </div>
+                  <p class="poster_num">1</p>
+                    <!-- 돌비시스템 -->
+                </div>
+                <div class="poster_txt">
+                  <div class="movie_tit age12">
+                    <p>페이트 스테이 나이트 헤븐즈필 제3장 스프링 송</p>
+                  </div>
+                  <div class="movie_rate">
+                    <ul>
+                      <li>
+                        <p class="rate_tit">예매율</p>
+                        <p class="rate_per">41%</p>
+                      </li>
+                      <li>
+                        <p class="rate_tit">관람평</p>
+                        <p class="rate_per">9.8</p>
+                      </li>
+                      <li>
+                        <p class="rate_tit">보고싶어</p>
+                        <p class="rate_per">1.5K</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie_btn">
+                    <button type="button">바로예매</button>
+                  </div>
+                </div>
+              </div>
               <div class="swiper-slide">2</div>
               <div class="swiper-slide">3</div>
               <div class="swiper-slide">4</div>
