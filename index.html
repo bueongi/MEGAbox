@@ -46,6 +46,7 @@
     .fright{float:right;}
     html,body{height:100%;}
     .not_scroll{width:100%;overflow:hidden;}
+    .wrap{background:#0e0a20;}
 
     .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px;}
     .content{padding:40px 0;}
@@ -61,6 +62,14 @@
     .con-txt02{font-size:1.2rem;}
     .con-txt03{font-size:0.8rem;}
     .con-txt04{font-size:0.6rem;}
+
+    /* ===== 섹션 타이틀 =======*/
+    .sec_tit{margin-bottom:16px;font-weight:bold;font-size:1.8rem;color:#fff;}
+    .movie_tit{margin:10px 0;font-weight:bold;color:#fff;}
+    .movie_txt{font-weight:100;color:#fff;}
+
+    /* 섹션 라인 */
+    .sec_line .line{height:1px;background:rgba(255,255,255,.5);}
 
     /* ==== skip_menu ==== */
     .skip_menu{position:fixed;left:0;top:-99999px;z-index:1;width:100%;padding:10px;background-color:#503396;text-align:center;}
@@ -141,7 +150,49 @@
     .box_office .all_movie p{padding-right:10px;}
     .arrow_box{padding-top:5px;}
 
-    .event{}
+    .hot_clip{}
+    .hot_clip .clip_img{position:relative;}
+    .hot_clip .play_btn{width:80px;height:80px;border:2px solid #fff;border-radius:50%;background:rgba(255,255,255,.5);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);cursor:pointer;}
+    .hot_clip .try{box-sizing:content-box;width:0;height:0;border:25px solid #fff;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent; position:absolute;left:72%;top:50%;transform:translate(-50%,-50%);}
+    .hot_clip .main_link{display:flex;margin-top:46px;padding:20px 0;background:#503396;}
+    .hot_clip .main_link li{width:33.33333333333333%;border-right:1px solid rgba(255,255,255,0.2);}
+    .hot_clip .main_link li:last-child{border:none;}
+    .hot_clip .main_link li a{display:flex;flex-flow:column nowrap;justify-content:space-between;align-items:center; width:50%;height:100px;margin:25%;color:#fff;}
+    .hot_clip .main_link li a .bg_img{height:23px;background-image:url('./images/ico-main-spritex2.png');background-size:334px;}
+    .hot_clip .main_link li:nth-child(1) a .bg_img{width:23px;background-position:-30px -56px;}
+    .hot_clip .main_link li:nth-child(2) a .bg_img{width:28px;background-position:-61px -56px;}
+    .hot_clip .main_link li:nth-child(3) a .bg_img{width:25px;background-position:-97px -56px;}
+
+
+    
+    .hot_clip>.movie_clip{display:none;width:100vw;height:100vh;background:#000;position:fixed;left:0;top:0;z-index:100;cursor:pointer;}
+    .hot_clip>.movie_clip>#close_clip{position:absolute;right:30px;top:30px;border:2px solid #fff;padding:10px;font-size:1.2rem;color:#fff;}
+    .hot_clip>.movie_clip>video{position:absolute;left:0;top:50%;width:100%;}
+    
+    /* banner */
+    .banner .container{text-align:center;background:#000;}
+    .banner img{width:360px;}
+
+    /* 무비피드 */
+    .movie_feed .content{cursor:pointer;}
+    .movie_feed .feed_list{display:flex;flex-flow:row wrap;justify-content:space-between;margin:40px 0;}
+    .movie_feed .feed_list .feed_list_txt{width:70%;margin-top:20px;}
+    .movie_feed .feed_list .feed_list_txt::after{content:'5';display:block;width:30px;margin-top:20px;text-align:right;color:#fff;background:url('./images/ico_movie_like.png') left center no-repeat;background-size:20px;}
+    .movie_feed .feed_list .feed_list_img{width:24%;margin-bottom:40px;}
+    .feed_list_img img{border-radius:10px;}
+
+    /* 무대인사 / 시사 */
+    .hello_movie .hello_content{display:flex;cursor:pointer;}
+    .hello_movie .hello_content .hello_img{width:100px;margin-right:30px;}
+    .hello_movie .hello_content .hello_img img{border-radius:10px;}
+    .hello_movie .hello_content .hello_txt{width:65%;display:flex;flex-flow:column nowrap;justify-content:space-between;}
+    .hello_movie .hello_content .hello_txt .movie_txt{padding:6px;border:1px solid #fff;display:inline-block;}
+    .hello_movie .hello_content .hello_txt .hello_btn{}
+    .hello_movie .hello_content .hello_txt .hello_btn li{display:inline-block;}
+    .hello_movie .hello_content .hello_txt .hello_btn a{padding:10px;}
+    .hello_movie .hello_content .hello_txt .hello_btn .movie_tit01{margin-right:10px;border-radius:6px 0 0 0;background:#999;}
+    .hello_movie .hello_content .hello_txt .hello_btn .movie_tit02{border-radius:6px 0 0 0;background:#333;}
+
     .curation{}
     .mega_info{}
     /* .footer{background:red;position:fixed;left:0;bottom:0;z-index:0;width:100%;} */
@@ -210,7 +261,7 @@
             <article class="nav_top">
               <div class="login clearfix">
                 <p class="fleft">
-                  <a href="#">로그인</a>후 이용하세요
+                  <a id="login" href="#">로그인</a>후 이용하세요
                 </p>
                 <div class="nav_close fright">
                   <img src="./images/ico-rnb-close.png" alt="네비닫기">
@@ -6237,7 +6288,140 @@
         </div>
       </div>
     </section>
-    <section class="section event"></section>
+
+    <section class="section sec_line">
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- 핫 클립 -->
+    <section class="section hot_clip">
+      <div class="content">
+        <div class="container">
+          <div class="sec_tit">핫클립</div>
+        </div>
+        <div class="clip_img">
+          <img src="./images/clip_img.jpg" alt="핫클립이미지">
+          <div class="play_btn">
+            <div class="try"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="movie_tit">노트북</div>
+          <div class="movie_txt">사랑한다면 이들처럼</div>
+          <ul class="main_link">
+            <li>
+              <a href="#">
+                <div class="bg_img"></div>
+                <p>포토카드</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="bg_img"></div>
+                <p>극장</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="bg_img"></div>
+                <p>본 영화등록</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="movie_clip">
+        <p id="close_clip">닫기</p>
+        <video autoplay src="./images/notebook.mp4"></video>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="container">
+        <img src="./images/banner01.jpg" alt="배너1">
+      </div>
+    </div>
+
+    <!-- 무비피드 -->
+    <section class="section movie_feed blank_link">
+      <div class="container">
+        <div class="content">
+          <div class="sec_tit">무비피드</div>
+          <div class="feed_img">
+            <img src="./images/movie-feed.jpg" alt="무비피드">
+          </div>
+          <div class="feed_list">
+            <div class="feed_list_txt">
+              <div class="movie_tit">
+                '테슬라'더 재밌게 볼 수 있는 TMI 대방출!
+              </div>
+              <div class="movie_txt">
+                에디슨이 이런 말을 했죠. “천재는 1% 영감과 99%의 노력으로 이루어진다” 여기에 맞선 한 마디.  “에디슨이 머리를 좀 더 썼으면 99%까지는 노력 안해도 됐을껄?” wow
+              </div>
+            </div>
+            <!-- ::after -->
+            <div class="feed_list_img">
+              <img src="./images/feed_img01.jpg" alt="피드이미지1">
+            </div>
+            <div class="feed_list_txt">
+              <div class="movie_tit">
+                10월 3주 YEAH GO!예고편 몰아보기
+              </div>
+              <div class="movie_txt">
+                매번 영화 예고편 찾아서 보기 귀찮은 메박러를 위해! 10월 3주 업데이트된 최신 영화 예고편 몰.아.보.기
+              </div>
+            </div>
+            <!-- ::after -->
+            <div class="feed_list_img">
+              <img src="./images/feed_img02.jpg" alt="피드이미지1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sec_line">
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- 무대인사 /시사 -->
+    <div class="section hello_movie blank_link">
+      <div class="container">
+        <div class="content">
+          <div class="sec_tit">무대인사 & 시사</div>
+          <div class="hello_content">
+            <div class="hello_img">
+              <img src="./images/hello_img.jpg" alt="">
+            </div>
+            <div class="hello_txt">
+              <div class="hello_txt_top">
+                <div class="movie_txt">시사회</div>
+                <div class="movie_tit"><도굴>메가박스 회원시사</div>
+              </div>
+              <div class="hello_btn">
+                <ul>
+                  <li><a href="#" class="movie_tit movie_tit01">영화상세</a></li>
+                  <li><a href="#" class="movie_tit movie_tit02">응모하기</a></li>
+                </ul>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section sec_line">
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </section>
+
     <section class="section curation"></section>
     <section class="section mega_info"></section>
     <section class="section banner03">
@@ -6345,18 +6529,40 @@
         
         var swiper01 = new Swiper('.swiper-container-has',{
           slidesPerView:'auto',
+          speed:50,
           freeMode:true
-        })
-        // 더 많은 영화보기
-        $('.box_office .all_movie').on('click',function(){
-          location.href('https://m.megabox.co.kr/movie/boxoffice');
         });
 
-        // 빈 링크
-        // $('a[href="#"]').on('click',function(){
-        //   alert('서비스 준비중입니다.');
-        //   return false
-        // })
+
+        // 빈링크표시
+        
+            // $('a').on('click',function(){
+            //   if($(this).attr('href')=='#'){
+            //     alert('서비스 준비중입니다.');
+            //   };
+            // });
+
+        $('.box_office .all_movie, .main_nav a,.hot_clip .main_link li a,#login,.movie_tit01,.movie_tit02').on('click',function(){
+          cons();
+          return false;
+        });
+
+        function cons(){
+          alert('서비스 준비중입니다.');
+        };
+        
+
+        $('.blank_link').on('click',function(){
+          alert('서비스 준비중입니다.');
+        });
+
+        //무비클립
+        $('.play_btn').on('click',function(){
+          $('.movie_clip').show();
+        });
+        $('#close_clip').on('click',function(){
+          $('.movie_clip').hide();
+        })
     })
   </script>
 </body>
