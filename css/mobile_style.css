@@ -185,11 +185,12 @@
     .movie_post .movie_txt{margin-bottom:18px;}
     .movie_post .movie_txt p{line-height:1.6rem;}
     .movie_post .post_write{border:1px solid #fff;border-radius:20px;padding:8px 10px;}
-    .movie_post .swiper-slide{width:160px;border-radius:5px;margin-right:18px!important;overflow:hidden;background:#503396;}
+    .movie_post .swiper-slide{width:160px;border-radius:5px;margin-right:10px!important;overflow:hidden;background:#503396;}
     .movie_post .swiper-slide .post_img{height:100px;overflow:hidden;}
-    .movie_post .swiper-slide .post_img img[src*='post07']{height:100%;}
+    .movie_post .swiper-slide .post_img img[src*='post06']{height:100%;}
     .movie_post .post_cont{height:136px;padding:16px 10px;display:flex;flex-flow:column nowrap;justify-content:space-between;}
     .movie_post .post_cont .post_id{padding-top:0;font-size:0.8rem;}
+    /* .movie_post .post_cont .post_tit{font-size:.8rem;} */
 
     /* 푸터 */
     .footer, .footer a{color:#fff;background:#222;}
