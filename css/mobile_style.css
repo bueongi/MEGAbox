@@ -144,7 +144,7 @@
     .movie_feed .content{cursor:pointer;}
     .movie_feed .feed_list{display:flex;flex-flow:row wrap;justify-content:space-between;margin:40px 0;}
     .movie_feed .feed_list .feed_list_txt{width:70%;margin-top:20px;}
-    .movie_feed .feed_list .feed_list_txt::after{content:'5';display:block;width:30px;margin-top:20px;text-align:right;color:#fff;background:url('../images/bg_origin.pngimages/ico_movie_like.png') left center no-repeat;background-size:20px;}
+    .movie_feed .feed_list .feed_list_txt::after{content:'5';display:block;width:30px;margin-top:20px;text-align:right;color:#fff;background:url('../images/ico_movie_like.png') left center no-repeat;background-size:20px;}
     .movie_feed .feed_list .feed_list_img{width:24%;margin-bottom:40px;}
     .feed_list_img img{border-radius:10px;}
 
