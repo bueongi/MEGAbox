@@ -121,7 +121,6 @@
     .arrow_box{padding-top:23px;}
 
     /* 핫클립 */
-    .hot_clip{}
     .hot_clip .clip_img{position:relative;}
     .hot_clip .play_btn{width:80px;height:80px;border:2px solid #fff;border-radius:50%;background:rgba(255,255,255,.5);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);cursor:pointer;}
     .hot_clip .play_btn .try{box-sizing:content-box;width:0;height:0;border:25px solid #fff;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent; position:absolute;left:72%;top:50%;transform:translate(-50%,-50%);}
