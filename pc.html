@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
   <!-- =============== -->
-  <script>
+  <!-- <script>
     var scrWidth = screen.width;
-    if(scrWidth<1200){
-      
+    if(scrWidth>=1200){
+      location.replace('pc.html');
     }
-  </script>
+  </script> -->
   <!-- =============== -->
 <head>
   <meta charset="UTF-8">
@@ -60,7 +60,7 @@
     <section class="wrap_top">
       <!-- 해더 -->
       <header class="header">
-        <div class="container clearfix">
+        <div class="container">
           <h1 class="logo">
             <a href="./pc.html">
               <img src="./images/logo-white.png" alt="로고 화이트" title="시작페이지로 이동">
@@ -125,7 +125,7 @@
                 <a href="#" title="상영시간표로 이동">
                   <img src="./images/schedule_white.png" alt="상영시간표">
                 </a>
-                <a href="#" title="영화검색">
+                <a href="#" title="영화검색" id="mymega">
                   <img src="./images/mymega_white.png" alt="마이메가박스">
                 </a>
               </div>
