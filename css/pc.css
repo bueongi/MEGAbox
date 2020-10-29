@@ -9,7 +9,7 @@ a{text-decoration:none;color:#fff;}
 
 .section{padding:50px 0 100px;}
 .container{width:1100px;margin:0 auto;}
-.sec_tit{font-size:2rem;font-weight:normal;color:#fff;}
+.sec_tit{font-size:2rem;font-weight:normal;}
 .txt_large{font-size:2rem;}
 .txt_medium{font-size:1.6rem;}
 .txt_small{font-size:0.8rem;}
@@ -29,7 +29,7 @@ a{text-decoration:none;color:#fff;}
 .wrap_top{background:#000;position:relative;}
 .wrap_top .bg_img{opacity:.1;position:relative;}
 .bg_img img{filter:blur(40px);}
-.wrap_top .bg_img::after{content:'';display:block;width:100%;position:absolute;left:0;top:0;background-image:;}
+.wrap_top .bg_img::after{content:'';display:block;width:100%;position:absolute;left:0;top:0;background-image:url('../images/patten.png');}
 
 
 /* 헤더 */
@@ -67,7 +67,13 @@ a{text-decoration:none;color:#fff;}
 .header_left .large_nav {padding-bottom:7px;}
 
 /* 박스오피스 */
-.box_office{width:100%;position:absolute;left:0;top:102px;}
-
+.box_office{width:100%;position:absolute;left:0;top:102px;z-index:5;}
+.box_office .sec_tit{width:5rem;margin:0 auto 30px;padding-bottom:20px;border-bottom:1px solid #fff;font-size:1rem;color:#fff;text-align:center;}
+.box_office .poster_img{position:relative;}
+.box_office .poster_top{width:100%;position:absolute;left:0;top:0;}
+.box_office .poster_top .number{float:left;}
+.box_office .poster_top .dolby_mx{float:right;}
+.box_office .dolby_img,.box_office .mx_img{display:inline-block;}
+.box_office .over_cont{width:100%;position:absolute;left:0;top:0;display:none;}
 
 .nav_list li>ul{display:none;}
