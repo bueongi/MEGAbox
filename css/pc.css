@@ -27,7 +27,7 @@ a{text-decoration:none;color:#fff;}
 
 /* 헤더 & 박스오피스 */
 .wrap_top{background:#000;position:relative;}
-.wrap_top .bg_img{opacity:.1;position:relative;}
+.wrap_top .bg_img{opacity:.1;position:relative;height:968px;}
 .bg_img img{filter:blur(40px);}
 .wrap_top .bg_img::after{content:'';display:block;width:100%;position:absolute;left:0;top:0;background-image:url('../images/patten.png');}
 
@@ -63,11 +63,10 @@ a{text-decoration:none;color:#fff;}
 #mymega img{position:absolute;right:0;top:-8px;}
 .header_right .large_nav .img_nav{order:2;}
 .header_right .large_nav .nav_list{order:1;}
-/* .header_right .large_nav .nav_list>ul>li>ul{right:20%;} */
 .header_left .large_nav {padding-bottom:7px;}
 
 /* 박스오피스 */
-.box_office{width:100%;position:absolute;left:0;top:102px;z-index:5;}
+.box_office{width:100%;position:absolute;left:0;top:102px;z-index:5;overflow:hidden;}
 .box_office .sec_tit{width:5rem;margin:0 auto 30px;padding-bottom:20px;border-bottom:1px solid #fff;font-size:1rem;color:#fff;text-align:center;}
 .box_office .swiper-container .swiper-slide{width:250px;}
 .box_office .poster_img{position:relative;border-radius:10px;overflow:hidden;}
@@ -105,11 +104,22 @@ a{text-decoration:none;color:#fff;}
 @keyframes loop_mouse{0%{top:0px;}20%{top:0px;}50%{top:50px;}80%{top:0px;}100%{top:0px;}}
 
 /* benefit */
-.benefit{background:rgba(255,255,255,.8);}
+.benefit{background:#fff;position:relative;}
 .benefit .sec_tit{color:#503396;margin-bottom:16px;}
-.benefit_top_left{float:left;width:670px;}
-.benefit_slider01{float:left;width:48%;}
+.benefit_top_left{float:left;width:655px;height:510px;display:flex;flex-flow:column nowrap;justify-content: space-between;}
+.benefit_slider01{float:left;width:48%;height:242px;overflow:hidden;}
 .benefit_slider02{float:right;width:48%;}
-.benefit_banner01{float:left;width:64%;}
-.benefit_banner02{float:right;width:32%;}
-.benefit_top_right{float:right;width:400px;}
+.nav_btn{width:300px;display:flex;justify-content:space-around;clear:both;padding-top:15px;}
+.nav_btn>div{margin-right:10px;}
+/* .nav_btn>div:last-child{margin-right:0;} */
+.nav_btn>div.hide{display:none;}
+.nav_bar{width:210px;height:3px;background:#ccc;margin-top:5px;}
+.nav_bar .sliding_box{width:30px;height:3px;background:#503396;transition:.3s;}
+.nav_btn .page{font-size:.8rem;}
+.benefit_banners{border-radius:8px;overflow:hidden;}
+.benefit_banner01{float:left;width:65%;}
+.benefit_banner02{float:right;width:30%;}
+.benefit_top_right{float:right;width:415px;border-radius:8px;overflow:hidden;}
+.benefit_bottom{height:250px;background:#503396;}
+.benefit_bottom ul{display:flex;flex-flow:row nowrap;justify-content:space-around;text-align:center;}
+.benefit_bottom ul li{display:inline-block;width:25%;height:100px;}
