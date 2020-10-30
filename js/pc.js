@@ -15,5 +15,11 @@ $(function(){
     spaceBetween:32,
     slidesPerView:'auto',
   });
+  var swiper02 = new Swiper('.swiper-container02',{
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 })
 // 
