@@ -16,7 +16,7 @@ a{text-decoration:none;color:#fff;}
 
 
 /* 스킵메뉴 */
-.skip_menu{background-color:#2a155a;text-align:center;position:fixed;left:0;top:-300px;width:100%;}
+.skip_menu{background-color:#503396;text-align:center;position:fixed;left:0;top:-300px;width:100%;}
 .skip_menu a{display:inline-block;margin:10px;border:2px solid transparent;border-radius:5px;padding:10px 16px;outline:none;color:#ffffff;font-weight:bold;}
 .skip_menu a:focus{border-color:#ffffff;}
 .skip_menu.active{top:0;}
@@ -100,13 +100,16 @@ a{text-decoration:none;color:#fff;}
 .box_office_nav .time_table>a{display:inline-block;width:110px;background:url('../images/schedule_white.png') no-repeat left;text-align:right;}
 .box_office_nav .office_box>a{display:inline-block;width:110px;background:url('../images/boxoffice_main.png') no-repeat left;text-align:right;}
 .box_office_nav .quick_ticket>a{display:inline-block;width:100px;background:url('../images/quick_reserve_main.png') no-repeat left;text-align:right;}
-
-@keyframes loop_mouse{
-  0%{top:0px;}
-  20%{top:0px;}
-  50%{top:50px;}
-  80%{top:0px;}
-  100%{top:0px;}
-}
 .move_btn{width:16px;height:100px;margin:0 auto;position:relative;}
 .move_btn img{position:absolute;left:0;top:0;animation:loop_mouse 1s ease-in-out;animation-iteration-count:infinite;}
+@keyframes loop_mouse{0%{top:0px;}20%{top:0px;}50%{top:50px;}80%{top:0px;}100%{top:0px;}}
+
+/* benefit */
+.benefit{background:rgba(255,255,255,.8);}
+.benefit .sec_tit{color:#503396;margin-bottom:16px;}
+.benefit_top_left{float:left;width:670px;}
+.benefit_slider01{float:left;width:48%;}
+.benefit_slider02{float:right;width:48%;}
+.benefit_banner01{float:left;width:64%;}
+.benefit_banner02{float:right;width:32%;}
+.benefit_top_right{float:right;width:400px;}
