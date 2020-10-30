@@ -111,15 +111,18 @@ a{text-decoration:none;color:#fff;}
 .benefit_slider02{float:right;width:48%;}
 .nav_btn{width:300px;display:flex;justify-content:space-around;clear:both;padding-top:15px;}
 .nav_btn>div{margin-right:10px;}
-/* .nav_btn>div:last-child{margin-right:0;} */
 .nav_btn>div.hide{display:none;}
 .nav_bar{width:210px;height:3px;background:#ccc;margin-top:5px;}
 .nav_bar .sliding_box{width:30px;height:3px;background:#503396;transition:.3s;}
 .nav_btn .page{font-size:.8rem;}
-.benefit_banners{border-radius:8px;overflow:hidden;}
 .benefit_banner01{float:left;width:65%;}
 .benefit_banner02{float:right;width:30%;}
 .benefit_top_right{float:right;width:415px;border-radius:8px;overflow:hidden;}
-.benefit_bottom{height:250px;background:#503396;}
-.benefit_bottom ul{display:flex;flex-flow:row nowrap;justify-content:space-around;text-align:center;}
-.benefit_bottom ul li{display:inline-block;width:25%;height:100px;}
+.benefit_bottom{width:60%;margin:50px auto 0;}
+.benefit_bottom>ul{padding:20px;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;}
+.benefit_bottom>ul>li{width:100px;height:120px;text-align:center;line-height:200px;}
+.benefit_bottom>ul>li:nth-child(1){background:url('../images/vip_main.png') center 20px no-repeat;}
+.benefit_bottom>ul>li:nth-child(2){background:url('../images/membership_main.png') center 20px no-repeat;}
+.benefit_bottom>ul>li:nth-child(3){background:url('../images/card_main.png') center 20px no-repeat;}
+.benefit_bottom>ul>li:nth-child(4){background:url('../images/evevt.png') center 20px no-repeat;}
+.benefit_bottom>ul>li:nth-child(5){background:url('../images/store_main.png') center 20px no-repeat;}
