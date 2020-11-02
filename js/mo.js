@@ -13,7 +13,7 @@ $(function(){
     }
   });
 
-  // ===팝업===
+  // ===모바일팝업===
   $('#popup_close').on('click',function(){
     if($('#day3_close').is(':checked')){
       $.cookie('non_popup', 'yes', { expires: 3, path: '/' });
