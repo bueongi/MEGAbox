@@ -35,12 +35,12 @@ $(function(){
   // 내비호출
   $('.burger_box').on('click',function(){
     $('nav').width(300);
-    $('body,hetml').addClass('not_scroll');
+    $('body,html').addClass('not_scroll');
     $('.before').show();
   });
   $('.nav_close').on('click',function(){
     $('nav').width(0);
-    $('body,hetml').removeClass('not_scroll');
+    $('body,html').removeClass('not_scroll');
     $('.before').hide();
   });
 
