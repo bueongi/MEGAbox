@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
   <!-- =============== -->
-  <!-- <script>
+  <script>
     var scrWidth = screen.width;
-    if(scrWidth>=1200){
-      location.replace('pc.html');
+    if(scrWidth<1200){
+      location.replace('index.html');
     }
-  </script> -->
+  </script>
   <!-- =============== -->
 <head>
   <meta charset="UTF-8">
@@ -49,6 +49,24 @@
   </section>
 
   <section class="wrap">
+    <!-- ===팝업섹션=== -->
+    <section class="pc_popup">
+      <article class="popup_content">
+        <div class="popup_img">
+          <img src="./images/popup.jpg" alt="팝업이미지">
+        </div>
+        <div class="popup_form clearfix">
+          <div>
+            <input type="checkbox" id="day3_close">
+            <label for="day3_close">3일동안 열지 않기</label>
+          </div>
+          <div>
+            <img id="popup_close" src="./images/close_popup.png" alt="팝업 닫기">
+          </div>
+        </div>
+      </article>
+    </section>
+
     <!-- 배너 -->
     <section class="banner01">
       <div class="container">
@@ -1030,7 +1048,61 @@
     <section class="section curation">
       <div class="container">
         <h2 class="sec_tit">큐레이션</h2>
-        <div class="sec_content"></div>
+        <div class="sec_content">
+          <div class="curation_main clearfix">
+            <div class="curation_main_img">
+              <img src="./images/curation_img.jpg" alt="큐레이션메인 이미지">
+              <img src="./images/curation_classic.png" alt="큐레이션클래식">
+            </div>
+            <div class="curation_main_btns">
+              <div class="curation_info_btn">상세정보</div>
+              <div class="curation_ticket_btn">예매</div>
+            </div>
+          </div>
+          <div class="curation_sub">
+            <h3>#클래식 소사이어티</h3>
+            <h4>[오페라] 지옥의 오르페</h4>
+            <hr class="line"></hr>
+            <p>[상영 정보]</p>
+            <ul>
+              <li>- 상영 지점 : 코엑스, 센트럴, 목동, 킨텍스, 분당, 성수, 세종청사</li>
+              <li>- 러닝 타임 : 145분 * 인터미션 없음</li>
+              <li>- 상영 일정 : 2020년 10월 25일(일) ~ 2020년 11월 25일 (수) / 수 19:00 (목동, 센트럴 14:00), 일 14:00 상영</li>
+              <li>- 배급사 사정에 따라 상영 일정 및 지점 등이 변경될 수 있습니다.</li>
+            </ul>
+            <p>제작 및 출연</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/curation_poster01.jpg" alt="위플래쉬">
+                  <img src="./images/curation_film.png" alt="큐레이션 필름">
+                  <p>위플래쉬</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/curation_poster02.jpg" alt="마틴에덴">
+                  <img src="./images/curation_film.png" alt="큐레이션 필름">
+                  <p>마틴 에덴</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/curation_poster03.jpg" alt="페뷸러스">
+                  <img src="./images/curation_film.png" alt="큐레이션 필름">
+                  <p>페뷸러스</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/curation_poster04.jpg" alt="포기와 베스">
+                  <img src="./images/curation_classic_c.png" alt="큐레이션 클래식 btn">
+                  <p>[오페라] 포기와 베스@The...</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section mega_info">
