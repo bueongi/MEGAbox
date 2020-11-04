@@ -112,8 +112,8 @@ a{text-decoration:none;color:#fff;}
 @keyframes loop_mouse{0%{top:0px;}20%{top:0px;}50%{top:50px;}80%{top:0px;}100%{top:0px;}}
 
 /* benefit */
-.benefit{background:#fff;position:relative;z-index:100;}
-.benefit::before{content:'';display:block;width:100%;height:400px;background-color:#503396;position: absolute;left:0;bottom:0;}
+.benefit{background:#fff;position:relative;z-index:90;}
+.benefit::before{content:'';display:block;width:100%;height:400px;background-color:#503396;position: absolute;left:0;bottom:0;z-index:-1;}
 .benefit .sec_tit{color:#503396;margin-bottom:16px;}
 .benefit_top_left{float:left;width:655px;height:510px;display:flex;flex-flow:column nowrap;justify-content: space-between;}
 .benefit_slider01{float:left;width:48%;height:242px;overflow:hidden;}
@@ -127,7 +127,7 @@ a{text-decoration:none;color:#fff;}
 .benefit_banner01{float:left;width:65%;}
 .benefit_banner02{float:right;width:30%;}
 .benefit_top_right{float:right;width:415px;border-radius:8px;overflow:hidden;}
-.benefit_bottom{width:60%;margin:50px auto 0;}
+.benefit_bottom{width:80%;margin:50px auto 0;}
 .benefit_bottom>ul{padding:20px;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;}
 .benefit_bottom>ul>li{width:100px;height:120px;text-align:center;line-height:200px;}
 .benefit_bottom>ul>li:nth-child(1){background:url('../images/vip_main.png') center 20px no-repeat;}
@@ -215,6 +215,6 @@ a{text-decoration:none;color:#fff;}
 .footer_bottom .footer_logo{margin-right:20px;}
 .footer_bottom address{font-style:normal;line-height:20px;}
 .footer_right p{text-align:right;margin-bottom:20px;}
-.footer_right p span{display:inline-block;border:1px solid #999999;border-radius:20px;padding:10px 30px;font-size:1.05rem;color:#000000;background:url('../images/search.png') 10px center no-repeat;cursor: pointer;}
+.footer_right p span{display:inline-block;border:1px solid #999999;border-radius:20px;padding:10px 20px 10px 40px;font-size:1.05rem;color:#000000;background:url('../images/search_black.png') 10px center no-repeat;cursor: pointer;}
 .footer_right ul{display:flex;flex-flow:row nowrap;justify-content:flex-end;}
 .footer_right ul li{margin-left:10px;}
