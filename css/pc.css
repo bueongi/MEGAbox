@@ -65,6 +65,9 @@ a{text-decoration:none;color:#fff;}
 .nav_list>ul>li>ul{width:19vw;padding:20px 0;background:rgba(0,0,0,.2);position:fixed;left:20%;top:172px;flex-flow:row nowrap;text-align:center;display:none;}
 .nav_list>ul>li:hover>ul{display:flex;}
 .nav_list>ul>li>ul>li{margin:0 10px;}
+.nav_list>ul>li:nth-child(1)>ul{padding-left:100px;}
+.nav_list>ul>li:nth-child(2)>ul{padding-left:150px;}
+.nav_list>ul>li:nth-child(3)>ul{padding-left:350px;}
 .nav_list>ul>li>ul>li a{font-size:1rem;}
 .nav_list li a{font-size:1.2rem;}
 #mymega{position:relative;width:20px;}
@@ -72,6 +75,9 @@ a{text-decoration:none;color:#fff;}
 .header_right .large_nav .img_nav{order:2;}
 .header_right .large_nav .nav_list{order:1;}
 .header_left .large_nav {padding-bottom:7px;}
+.header_right .nav_list>ul>li:nth-child(1)>ul{padding-left:650px;}
+.header_right .nav_list>ul>li:nth-child(2)>ul{padding-left:700px;}
+.header_right .nav_list>ul>li:nth-child(3)>ul{padding-left:850px;}
 
 /* 박스오피스 */
 .box_office{width:100%;position:absolute;left:0;top:102px;z-index:5;overflow:hidden;}
