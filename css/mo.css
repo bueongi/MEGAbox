@@ -105,10 +105,10 @@
     .box_office .poster_box .flim{position:absolute;right:10px;bottom:10px;}
     .box_office .movie_tit,.box_office .movie_rate,.box_office .movie_btn{margin:10px 0 20px;}
     .box_office .movie_tit{display:flex;justify-content:center;}
-    .box_office .movie_tit.age12::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/bg_origin.pngimages/age_12.png');background-size:cover;}
-    .box_office .movie_tit.age15::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/bg_origin.pngimages/age_15.png');background-size:cover;}
-    .box_office .movie_tit.age19::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/bg_origin.pngimages/age_19.png');background-size:cover;}
-    .box_office .movie_tit.all::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/bg_origin.pngimages/age_all.png');background-size:cover;}
+    .box_office .movie_tit.age12::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/age_12.png');background-size:cover;}
+    .box_office .movie_tit.age15::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/age_15.png');background-size:cover;}
+    .box_office .movie_tit.age19::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/age_19.png');background-size:cover;}
+    .box_office .movie_tit.all::before{content:'';display:block;width:16px;height:16px;background-image:url('../images/age_all.png');background-size:cover;}
     .box_office .movie_tit p{padding-left:10px;}
     .box_office .movie_rate>ul{display:flex;justify-content:space-around;}
     .box_office .movie_rate .rate_tit{margin-bottom:4px;font-weight:100;font-size:0.7rem;color:rgba(255,255,255,.4);}
